@@ -38,11 +38,6 @@ body{
   width: 60%;
 }
 
-@media (max-width: 768px) {
-  .navbar-nav .nav-link::after {
-    display: none;
-  }
-}
 h1{
   color: var(--custom-primary-text-color);
   font-family: "Inter", sans-serif;
@@ -129,7 +124,6 @@ h1{
   width: 330px;
   border-radius: 15px;
 }
-
 .about-col-2 {
   flex-basis: 60%;
 }
@@ -211,7 +205,7 @@ h1{
   border-color: var(--custom-secondary-color);
   color: var(--custom-secondary-text-color);
 }
-/* Media query for small screens of about section */
+
 /* Adjustments for small screens */
 @media (max-width: 767px) {
   .sections {
