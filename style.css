@@ -439,7 +439,7 @@ h1{
 }
 .proj-container .cac-img {
   width: calc(100% - 5px);
-  margin: 70px;
+  margin: 50px;
 }
 .proj-container .btn {
   display: inline-block;
