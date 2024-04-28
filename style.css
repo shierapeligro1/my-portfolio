@@ -438,8 +438,8 @@ h1{
   font-size: 15px;
 }
 .proj-container .cac-img {
-  width: 100%;
-  margin: 50px;
+  width: calc(100% - 5px);
+  margin: 40px auto;
 }
 .proj-container .btn {
   display: inline-block;
