@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainmin.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="x-icon" href="includes/logo.ico" />
+    <title>Shiera Peligro's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand">
+          <img src="includes/logo.ico" class="logo" />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav ms-auto py-3 py-lg-3 mx-3">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project Content-->
+    <div class="proj-container justify-content-center align-items-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-11"></div>
+        <header class="header">
+          <img src="includes/project1.png" alt="Project 1 Image" />
+          <a
+            href="https://www.figma.com/proto/2UzsuojS57qsO2N3UhfXD9/Canteen-Food-Reservation?type=design&node-id=25-4182&t=0yltbE19qUmh74YP-1&scaling=scale-down&page-id=0%3A1&mode=design"
+            role="button"
+            target="_blank"
+            class="btn"
+          >
+            View Prototype
+          </a>
+        </header>
+
+        <div class="content">
+          <h2 class="display-proj-title">
+            Canteen Food Reservation System with QR Code
+          </h2>
+          <hr />
+          <h4>Project overview</h4>
+          <p>
+            The Canteen Food Reservation System with QR Code project aims to
+            revolutionize the dining experience within educational institutions
+            by introducing a modern and efficient ordering system. Developed in
+            response to the challenges posed by the COVID-19 pandemic, the
+            project focuses on enhancing safety measures, improving order
+            accuracy, and optimizing the overall canteen operations.
+          </p>
+
+          <h4>Objectives</h4>
+          <p>
+            The primary objective of implementing the Canteen Food Reservation
+            System with QR Code is to streamline the process of ordering food
+            from the canteen while adhering to pandemic-related health and
+            safety protocols. The system aims to facilitate contactless ordering
+            and minimize physical interaction in the canteen area, thereby
+            reducing the risk of spreading infectious diseases.
+          </p>
+
+          <h4>Problem</h4>
+          <p>
+            In traditional canteen settings, students, faculty, and staff
+            members often face challenges such as long queues, crowded spaces,
+            and limited menu visibility. These issues have become more
+            pronounced during the pandemic, where maintaining social distancing
+            and ensuring health security are paramount concerns. Additionally,
+            the manual order-taking process may lead to errors and delays,
+            further exacerbating the situation.
+          </p>
+
+          <h4>Solution</h4>
+          <p>
+            The proposed solution is to develop a Canteen Food Reservation
+            System equipped with QR Code technology. This system allows users to
+            place food orders in advance using their smartphones or other
+            devices. Upon arrival at the canteen, users can scan a unique QR
+            Code assigned to their order, which will be displayed on their
+            device screens. This process eliminates the need for physical menus,
+            order slips, and cash transactions, thereby promoting a safer and
+            more efficient dining experience.
+          </p>
+
+          <h4>Key Components</h4>
+          <ul>
+            <li>
+              <span class="components-title"> Mobile Application: </span>
+              A user-friendly mobile application serves as the interface for
+              placing food orders, browsing the menu, and scheduling pickup
+              times. The application is designed to be accessible to users of
+              all technical backgrounds and compatible with various smartphone
+              devices.
+            </li>
+            <li>
+              <span class="components-title">Backend System: </span>
+              A robust backend system manages order processing, inventory
+              management, and user authentication. It facilitates seamless
+              communication between the mobile application and the canteen
+              staff, ensuring efficient order fulfillment and timely updates.
+            </li>
+            <li>
+              <span class="components-title">QR Code Integration: </span>QR Code
+              technology is utilized to generate unique identifiers for each
+              food order. These QR Codes contain essential order details,
+              including menu items, preferences, and pickup times. Users present
+              these QR Codes at the canteen for easy identification and
+              retrieval of their orders.
+            </li>
+          </ul>
+
+          <h4>Key Features</h4>
+          <ul>
+            <li>
+              <span class="components-title">
+                User registration and Authentication:
+              </span>
+              Users (students, faculty, and staff) can register and create
+              accounts on the platform using their university credentials.
+              Authentication ensures secure access to the system.
+            </li>
+            <li>
+              <span class="components-title">Menu Management: </span>The system
+              provides an intuitive interface for canteen staff to manage the
+              menu items available for reservation. They can update menu items,
+              prices, and availability in real-time.
+            </li>
+            <li>
+              <span class="components-title">Reservation System: </span>Users
+              can browse through the available menu items, select their desired
+              items, and place reservations through the system. They can specify
+              pickup time slots based on their schedule.
+            </li>
+            <li>
+              <span class="components-title">Order Management: </span>Canteen
+              staff receive notifications for new reservations and prepare
+              orders accordingly. The system organizes orders based on pickup
+              time slots to ensure efficient food preparation and minimize wait
+              times.
+            </li>
+          </ul>
+
+          <h4>Implementation Strategy</h4>
+          <ul>
+            <li>
+              <span class="implement-title">Requirement Analysis: </span>
+              The project begins with a thorough analysis of user requirements,
+              canteen workflows, and pandemic-related health guidelines.
+              Stakeholder consultations and feedback sessions inform the design
+              and development process.
+            </li>
+            <li>
+              <span class="implement-title">Prototyping and Testing: </span>
+              A prototype of the Canteen Food Reservation System is developed to
+              validate the proposed solution and gather user feedback. Iterative
+              testing cycles refine the system's functionality, usability, and
+              performance.
+            </li>
+            <li>
+              <span class="implement-title">Deployment and Training: </span>Upon
+              successful testing, the system is deployed within the canteen
+              environment. Canteen staff undergo training sessions to
+              familiarize themselves with the new technology and operational
+              procedures.
+            </li>
+            <li>
+              <span class="implement-title">Monitoring and Maintenance: </span>
+              Continuous monitoring of system performance, user engagement, and
+              customer satisfaction ensures the system's effectiveness over
+              time. Regular updates and maintenance activities address any
+              issues or enhancements identified during operation.
+            </li>
+          </ul>
+
+          <h4>Expected Benefits</h4>
+          <ul>
+            <li>
+              <span class="benefits-title">Enchanced Safety: </span>
+              By minimizing physical contact and adhering to health security
+              protocols, the system reduces the risk of virus transmission
+              within the canteen environment.
+            </li>
+            <li>
+              <span class="benefits-title">Improved Efficiency: </span>
+              Streamlined order processing, digital menus, and pre-scheduled
+              pickup times enhance the overall efficiency of canteen operations,
+              reducing wait times and increasing customer satisfaction.
+            </li>
+            <li>
+              <span class="benefits-title">Data-driven Insights: </span>The
+              system generates valuable data insights related to user
+              preferences, popular menu items, and peak ordering times. These
+              insights inform menu planning, inventory management, and business
+              decision-making.
+            </li>
+            <li>
+              <span class="benefits-title">Scalability and Adaptability: </span
+              >The modular design of the system allows for scalability and
+              adaptability to accommodate future changes in user demand,
+              technological advancements, and evolving health regulations.
+            </li>
+          </ul>
+          <h4>Conclusion</h4>
+          <p>
+            The implementation of the Canteen Food Reservation System with QR
+            Code offers a practical solution to the challenges posed by the
+            pandemic while enhancing the overall efficiency and safety of the
+            canteen operations. By embracing digital innovation and prioritizing
+            health security, educational institutions can provide a more
+            seamless dining experience for students, faculty, and staff members.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button id="scrollToTopBtn" title="Go to top">
+      <img src="node_modules/bootstrap-icons/icons/arrow-up.svg" alt="" />
+    </button>
+
+    <script>
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+      scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

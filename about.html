@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainmin.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="x-icon" href="includes/logo.ico" />
+    <title>Shiera Peligro's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand">
+          <img src="includes/logo.ico" class="logo" />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav ms-auto py-3 py-lg-3 mx-3">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="sections">
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="about-col-1">
+            <img src="includes/my profile.png" alt="profile" />
+            <div class="me-5 my-4">
+              <a
+                href="https://drive.google.com/file/d/1vqtA7ph3ExrjLwZzCKp_IXiyghcaF-xv/view?usp=sharing"
+                target="_blank"
+                role="button"
+                class="btn-custom-one"
+              >
+                View CV
+              </a>
+            </div>
+          </div>
+
+          <div class="about-col-2">
+            <h1>
+              <div class="display-title">Shiera Abigail C. Peligro</div>
+              <div class="display-description">
+                UI/UX Design and Web Developer
+              </div>
+            </h1>
+            <p class="lead my-4">
+              I am an Information Technology graduate with a keen interest in
+              continuously developing my passion for UI/UX Design and Web
+              Development. I enjoy leveraging my creativity and problem-solving
+              skills to craft digital experiences.
+            </p>
+            <p class="lead my-4">
+              My interest in UI/UX Design and Web Development began during my
+              Senior High School when I worked on a project. I am eager to
+              further expand my knowledge in these areas, improve my skills, and
+              gain more experience.
+            </p>
+
+            <div class="tab-titles my-auto">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents my-2 active-tab" id="skills">
+              <ul class="list-group">
+                <li>Wireframing & Prototyping</li>
+                <li>UI/UX Design</li>
+                <li>Web Development</li>
+                <li>Marketing/Social Media</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents my-2" id="experience">
+              <ul class="list-group">
+                <li>
+                  <span>Dec 2023 - Present | CCK City Network INC.,</span
+                  ><br />Data Processor - Test Rater
+                </li>
+
+                <li>
+                  <span
+                    >Aug 2022 - Oct 2022 | Big Media PH Digital
+                    Corporation</span
+                  >
+                  <br />Digital Marketing Intern
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents my-2" id="education">
+              <ul class="list-group">
+                <li>
+                  <span
+                    >Aug 2023 | Rizal Technological University (College)</span
+                  ><br />Bachelor of Science in Information Technology
+                </li>
+                <li>
+                  <span>May 2019 | Rizal Technological University (SHS)</span
+                  ><br />TVL - Information, Communication and Technology (ICT)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainmin.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="x-icon" href="includes/logo.ico" />
+    <title>Shiera Peligro's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand">
+          <img src="includes/logo.ico" class="logo" />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav ms-auto py-3 py-lg-3 mx-3">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project Section-->
+    <div class="sections">
+      <div class="project-container">
+        <div class="row justify-content-center align-items-center">
+          <h1 class="proj-title">Projects</h1>
+          <!-- First project -->
+          <div class="col-lg-6 col-md-12">
+            <a href="projects-1.html">
+              <img
+                src="includes/project1.png"
+                alt="Project 1 Image"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <hr />
+            <h2>Project 1: Canteen Food Reservation System</h2>
+            <p class="interface">Responsive Website</p>
+            <p class="description">
+              The Canteen Food Reservation System with QR Code is a digital
+              solution designed to streamline the food ordering process within
+              educational institutions while prioritizing health security and
+              social distancing measures.
+            </p>
+            <a href="projects-1.html" role="button" class="btn">
+              View Case Study
+            </a>
+            <hr />
+          </div>
+
+          <!-- Second project-->
+          <div class="col-lg-6 col-md-12">
+            <a href="projects-2.html">
+              <img
+                src="includes/project2.png"
+                alt="Project 2 Image"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <hr />
+            <h2>Project 2: TaskTrove</h2>
+            <p class="interface">Mobile App</p>
+            <p class="description">
+              TaskTrove represents a holistic solution for students seeking to
+              enhance their organizational skills, time management abilities,
+              and motivation levels.
+            </p>
+            <a href="projects-2.html" role="button" class="btn">
+              View Case Study
+            </a>
+            <hr />
+          </div>
+
+          <!-- Third project-->
+          <div class="col-lg-6 col-md-12">
+            <a href="projects-3.html">
+              <img
+                src="includes/project3.png"
+                alt="Project 3 Image"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <hr />
+            <h2>Project 3: Chic Attire Co</h2>
+            <p class="interface">Responsive Website</p>
+            <p class="description">
+              This project aspires to elevate the online shopping experience,
+              embodying the brand's ethos of elegance and sophistication while
+              prioritizing usability and functionality.
+            </p>
+            <a href="projects-3.html" role="button" class="btn">
+              VIEW PROJECT
+            </a>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">
+      <img src="node_modules/bootstrap-icons/icons/arrow-up.svg" alt="" />
+    </button>
+    <script>
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+      scrollToTopBtn.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

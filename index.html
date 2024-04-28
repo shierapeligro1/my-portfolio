@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainmin.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="x-icon" href="includes/logo.ico" />
+    <title>Shiera Peligro's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand">
+          <img src="includes/logo.ico" class="logo" />
+        </a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toogle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav ms-auto py-3 py-lg-3 mx-3">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-md-8">
+          <h1>Hi, I'm Shiera!</h1>
+          <p class="self-desc">
+            A passionate <span class="designer">UI/UX Designer</span> and
+            <span class="dev">Web Developer</span>, dedicated to crafting
+            engaging and user-friendly digital experiences.
+          </p>
+          <div class="my-3">
+            <!-- Use the btn-custom class for your button -->
+            <a href="projects.html" role="button" class="btn btn-custom"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
